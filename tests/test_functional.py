@@ -4,8 +4,7 @@
 See: http://webtest.readthedocs.org/
 """
 from flask import url_for
-
-from vscode.user.models import User
+from src.user.models import User
 
 from .factories import UserFactory
 

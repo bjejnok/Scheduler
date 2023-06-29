@@ -1,20 +1,20 @@
 /*
- * Main Javascript file for vscode.
+ * Main Javascript file for Scheduler.
  *
  * This file bundles all of your javascript together using webpack.
  */
 
 // JavaScript modules
-require('@fortawesome/fontawesome-free');
-require('jquery');
-require('bootstrap');
+require("@fortawesome/fontawesome-free");
+require("jquery");
+require("bootstrap");
 
 require.context(
-  '../img', // context folder
+  "../img", // context folder
   true, // include subdirectories
-  /.*/, // RegExp
+  /.*/ // RegExp
 );
 
 // Your own code
-require('./plugins');
-require('./script');
+require("./plugins");
+require("./script");

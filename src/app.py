@@ -4,9 +4,8 @@ import logging
 import sys
 
 from flask import Flask, render_template
-
-from vscode import commands, public, user
-from vscode.extensions import (
+from src import commands, public, user
+from src.extensions import (
     bcrypt,
     cache,
     csrf_protect,
@@ -18,7 +17,7 @@ from vscode.extensions import (
 )
 
 
-def create_app(config_object="vscode.settings"):
+def create_app(config_object="src.settings"):
     """Create application factory, as explained here: http://flask.pocoo.org/docs/patterns/appfactories/.
 
     :param config_object: The configuration object to use.

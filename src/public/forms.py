@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 """Public forms."""
 from flask_wtf import FlaskForm
+from src.user.models import User
 from wtforms import PasswordField, StringField
 from wtforms.validators import DataRequired
-
-from vscode.user.models import User
 
 
 class LoginForm(FlaskForm):

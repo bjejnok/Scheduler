@@ -25,7 +25,7 @@ def test(coverage):
 
     args = [TEST_PATH, "--verbose"]
     if coverage:
-        args.append("--cov=vscode")
+        args.append("--cov=src")
     rv = pytest.main(args)
     exit(rv)
 

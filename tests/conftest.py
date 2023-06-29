@@ -4,10 +4,9 @@
 import logging
 
 import pytest
+from src.app import create_app
+from src.database import db as _db
 from webtest import TestApp
-
-from vscode.app import create_app
-from vscode.database import db as _db
 
 from .factories import UserFactory
 

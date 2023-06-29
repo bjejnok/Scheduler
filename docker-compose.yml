@@ -17,7 +17,7 @@ services:
       target: development
       args:
         <<: *build_args
-    image: "vscode-development"
+    image: "scheduler-development"
     ports:
       - "8080:5000"
       - "2992:2992"
@@ -29,7 +29,7 @@ services:
       target: production
       args:
         <<: *build_args
-    image: "vscode-production"
+    image: "scheduler-production"
     ports:
       - "8080:5000"
     environment:
@@ -49,7 +49,7 @@ services:
     environment:
       FLASK_ENV: production
       FLASK_DEBUG: 0
-    image: "vscode-manage"
+    image: "scheduler-manage"
     stdin_open: true
     tty: true
     <<: *default_volumes

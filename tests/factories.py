@@ -2,9 +2,8 @@
 """Factories to help in tests."""
 from factory import Sequence
 from factory.alchemy import SQLAlchemyModelFactory
-
-from vscode.database import db
-from vscode.user.models import User
+from src.database import db
+from src.user.models import User
 
 
 class BaseFactory(SQLAlchemyModelFactory):
