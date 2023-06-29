@@ -3,8 +3,7 @@
 import datetime as dt
 
 import pytest
-
-from vscode.user.models import Role, User
+from src.user.models import Role, User
 
 from .factories import UserFactory
 

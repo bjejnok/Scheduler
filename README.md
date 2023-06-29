@@ -1,7 +1,5 @@
 # Scheduler
 
-
-
 ## Docker Quickstart
 
 This app can be run completely using `Docker` and `docker-compose`. **Using Docker is recommended, as it guarantees the application is run using compatible versions of Python and Node**.
@@ -45,7 +43,7 @@ Go to `http://localhost:8080`. You will see a pretty welcome screen.
 Run the following commands to bootstrap your environment if you are unable to run the application using Docker
 
 ```bash
-cd vscode
+cd src
 pip install -r requirements/dev.txt
 npm install
 npm run-script build
@@ -160,13 +158,16 @@ as it resolves the correct file name, including the MD5 hash.
 For example
 
 ```html
-<link rel="shortcut icon" href="{{static_url_for('static', filename='build/favicon.ico') }}">
+<link
+    rel="shortcut icon"
+    href="{{static_url_for('static', filename='build/favicon.ico') }}"
+/>
 ```
 
 If all of your static files are managed this way, then their filenames will change whenever their
 contents do, and you can ask Flask to tell web browsers that they
 should cache all your assets forever by including the following line
-in ``.env``:
+in `.env`:
 
 ```text
 SEND_FILE_MAX_AGE_DEFAULT=31556926  # one year

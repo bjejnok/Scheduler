@@ -10,12 +10,11 @@ from flask import (
     url_for,
 )
 from flask_login import login_required, login_user, logout_user
-
-from vscode.extensions import login_manager
-from vscode.public.forms import LoginForm
-from vscode.user.forms import RegisterForm
-from vscode.user.models import User
-from vscode.utils import flash_errors
+from src.extensions import login_manager
+from src.public.forms import LoginForm
+from src.user.forms import RegisterForm
+from src.user.models import User
+from src.utils import flash_errors
 
 blueprint = Blueprint("public", __name__, static_folder="../static")
 

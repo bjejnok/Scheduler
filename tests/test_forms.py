@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """Test forms."""
 
-from vscode.public.forms import LoginForm
-from vscode.user.forms import RegisterForm
+from src.public.forms import LoginForm
+from src.user.forms import RegisterForm
 
 
 class TestRegisterForm:
